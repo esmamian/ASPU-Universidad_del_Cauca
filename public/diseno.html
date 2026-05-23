@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Cuestionario Diseño</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<div class="contenedor">
+  <img src="Logo.png" alt="Logo ASPU" class="logo">
+  <h1>Diseño</h1>
+  <h2 id="bienvenida"></h2>
+  <form id="formulariodiseno">
+
+<button type="button" class="button1" onclick="window.location.href='principal.html'">
+  Volver al menú
+</button>
+  
+ <!-- ITEM 1 -->
+
+<div class="item">
+  <div class="fila">
+
+    <div class="texto">
+      Obras de creación en diseño o comunicación visual certificadas
+    </div>
+
+    <div id="obraDiseno" class="cantidad">
+
+      <label>¿Cuántas internacional?</label>
+      <input
+        type="number"
+        min="0"
+        step="1"
+        id="numObraDisenoInter"
+        name="numObraDisenoInter"
+        placeholder="0">
+      <label>Año de la más antigua</label>
+      <input type="number" min="0" step="1" id="anoObraDisenoInter" name="anoObraDisenoInter" placeholder="0">
+      
+
+       
+
+      <label>¿Cuántas nacional?</label>
+      <input
+        type="number"
+        min="0"
+        step="1"
+        id="numObraDisenoNal"
+        name="numObraDisenoNal"
+        placeholder="0">
+      
+      <label>Año de la más antigua</label>
+      <input type="number" min="0" step="1" id="anoObraDisenoNal" name="anoObraDisenoNal" placeholder="0">
+
+      <label>¿Cuántas regional/local?</label>
+      <input
+        type="number"
+        min="0"
+        step="1"
+        id="numObraDisenoReg"
+        name="numObraDisenoReg"
+        placeholder="0">
+   
+      <label>Año de la más antigua</label>
+      <input type="number" min="0" step="1" id="anoObraDisenoReg" name="anoObraDisenoReg" placeholder="0">
+
+    </div>
+
+    <div class="opciones">
+
+      <label>
+        <input
+          type="radio"
+          name="obraDiseno"
+          value="Sí"
+          onclick="mostrarCantidad('obraDiseno')">
+
+        Sí
+      </label>
+
+      <label>
+        <input
+          type="radio"
+          name="obraDiseno"
+          value="No"
+          onclick="ocultarCantidad('obraDiseno')">
+
+        No
+      </label>
+
+    </div>
+
+  </div>
+</div>
+
+<!-- ITEM 2 -->
+
+<div class="item">
+  <div class="fila">
+
+    <div class="texto">
+      Obras premiada en concurso o salones certificados
+    </div>
+
+    <div id="obraPremiada" class="cantidad">
+
+      <label>¿Cuántas internacional?</label>
+      <input
+        type="number"
+        min="0"
+        step="1"
+        id="numObraPremiadaInter"
+        name="numObraPremiadaInter"
+        placeholder="0">
+
+      <label>¿Cuántas nacional?</label>
+      <input
+        type="number"
+        min="0"
+        step="1"
+        id="numObraPremiadaNal"
+        name="numObraPremiadaNal"
+        placeholder="0">
+
+    </div>
+
+    <div class="opciones">
+
+      <label>
+        <input
+          type="radio"
+          name="obraPremiada"
+          value="Sí"
+          onclick="mostrarCantidad('obraPremiada')">
+
+        Sí
+      </label>
+
+      <label>
+        <input
+          type="radio"
+          name="obraPremiada"
+          value="No"
+          onclick="ocultarCantidad('obraPremiada')">
+
+        No
+      </label>
+
+    </div>
+
+  </div>
+</div>
+
+
+
+  <button type="button" class="button1" onclick="window.location.href='principal.html'">
+  Volver al menú
+</button>  
+
+  <button type="submit" class="button1">
+    Guardar respuestas
+  </button>
+
+  <p id="mensaje"></p>
+
+  </form>
+</div>
+
+<script>
+let usuarioActual = null;
+
+async function cargarUsuario() {
+  const res = await fetch("/usuario");
+
+  if (!res.ok) {
+    window.location.href = "index.html";
+    return;
+  }
+
+  usuarioActual = await res.json();
+
+  document.getElementById("bienvenida").textContent =
+    "Usuario: " + usuarioActual.usuario;
+}
+
+cargarUsuario();
+
+function mostrarCantidad(id) {
+  document.getElementById(id).style.display = "block";
+}
+
+function ocultarCantidad(id) {
+  const contenedor = document.getElementById(id);
+
+  contenedor.style.display = "none";
+
+  const inputs = contenedor.querySelectorAll("input");
+
+  inputs.forEach(input => {
+    input.value = "";
+  });
+}
+
+document.getElementById("formulariodiseno")
+.addEventListener("submit", async function(e) {
+  e.preventDefault();
+
+  if (!formularioCompleto(this)) {
+  return;
+}
+
+  const datos = new FormData(this);
+
+  function formularioCompleto(formulario) {
+
+  const radios = {};
+
+  formulario.querySelectorAll('input[type="radio"]')
+  .forEach(radio => {
+    radios[radio.name] = true;
+  });
+
+  for (let nombre in radios) {
+
+    const seleccionado = formulario.querySelector(
+      `input[name="${nombre}"]:checked`
+    );
+
+    if (!seleccionado) {
+
+      alert(
+        "Debe responder todas las preguntas antes de guardar."
+      );
+
+      return false;
+    }
+
+    if (seleccionado.value === "Sí") {
+
+      const item = seleccionado.closest(".item");
+
+      const inputs =
+        item.querySelectorAll('input[type="number"]');
+
+      let alMenosUno = false;
+
+      for (let input of inputs) {
+
+        if (
+          input.value !== "" &&
+          Number(input.value) > 0
+        ) {
+          alMenosUno = true;
+        }
+      }
+
+      if (!alMenosUno) {
+
+        alert(
+          "Debe completar al menos una cantidad cuando responde Sí."
+        );
+
+        return false;
+      }
+    }
+  }
+
+  return true;
+}
+
+
+  const res = await fetch("/guardar-diseno", {
+
+  method: "POST",
+
+  headers: {
+    "Content-Type": "application/json"
+  },
+
+  body: JSON.stringify({
+
+    seccion: "Diseño",
+
+    obraDiseno:
+      datos.get("obraDiseno"),
+
+    cantidadObraDisenoInter:
+      datos.get("numObraDisenoInter"),
+
+    anoObraDisenoInter:
+      datos.get("anoObraDisenoInter"),
+
+    cantidadObraDisenoNal:
+      datos.get("numObraDisenoNal"),
+
+    anoObraDisenoNal:
+      datos.get("anoObraDisenoNal"),
+
+    cantidadObraDisenoReg:
+      datos.get("numObraDisenoReg"),
+
+    anoObraDisenoReg:
+      datos.get("anoObraDisenoReg"),
+
+
+    obraPremiada:
+      datos.get("obraPremiada"),
+
+    cantidadObraPremiadaInter:
+      datos.get("numObraPremiadaInter"),
+
+    cantidadObraPremiadaNal:
+      datos.get("numObraPremiadaNal")
+
+  })
+
+});
+
+const data = await res.json();
+
+  if (res.ok) {
+    alert("Los datos se salvaron satisfactoriamente");
+  } else {
+    alert("Error: " + (data.detalle || data.mensaje));
+  }
+
+  document.getElementById("mensaje").textContent = data.mensaje;
+});
+
+</script>
+
+</body>
+</html>

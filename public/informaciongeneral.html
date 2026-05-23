@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Cuestionario Encabezado</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+<div class="contenedor">
+
+  <h1>Información General</h1>
+  <h2 id="bienvenida"></h2>
+  
+  <img src="Logo.png" alt="Logo ASPU" class="logo">
+
+  <form id="formularioencabezado">
+
+    <button type="button"
+            class="button1"
+            onclick="window.location.href='principal.html'">
+
+      Volver al menú
+    </button>
+
+
+    <!-- ITEM 0 -->
+
+    <div class="item">
+
+      <div class="fila">
+
+        <div class="texto">
+            Fecha de nacimiento
+        </div>
+
+        <div class="cantidadTexto">
+
+          <input
+            type="date"
+            id="fechaNacimiento"
+            name="fechaNacimiento"
+            min="1945-01-01"
+            max="2006-12-31"
+            required>
+             
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- ITEM 0.0.0 -->
+    <div class="item">
+
+      <div class="fila">
+
+        <div class="texto">
+          Lugar de nacimiento (Municipio, Departamento)
+        </div>
+
+        <div class="cantidadTexto">
+
+          <textarea
+            id="lugarNacimiento"
+            name="lugarNacimiento"
+            rows="4"
+            placeholder="Municipio, Departamento"></textarea>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- ITEM 0.0 -->
+
+    <div class="item">
+
+      <div class="fila">
+
+        <div class="texto">
+          Sexo
+        </div>
+
+        <div class="opciones">
+
+          <label>
+            <input
+              type="radio"
+              name="sexo"
+              value="femenino">
+
+            Femenino
+          </label>
+
+          <label>
+            <input
+              type="radio"
+              name="sexo"
+              value="masculino">
+
+            Masculino
+          </label>
+
+          
+          <label>
+            <input
+              type="radio"
+              name="sexo"
+              value="nodefinido">
+
+            No definido
+          </label>
+
+        </div>
+
+      </div>
+
+    </div>
+
+     <!-- ITEM 0.0.0 -->
+
+    <div class="item">
+
+      <div class="fila">
+
+        <div class="texto">
+          Estado civil
+        </div>
+
+        <div class="opciones">
+
+          <label>
+            <input
+              type="radio"
+              name="estadocivil"
+              value="Soltero(a)">
+
+            Soltero(a)
+          </label>
+
+          <label>
+            <input
+              type="radio"
+              name="estadocivil"
+              value="Casado(a)">
+
+            Casado(a)
+          </label>
+
+          
+          <label>
+            <input
+              type="radio"
+              name="estadocivil"
+              value="Divorciado(a)">
+
+            Divorciado(a)
+          </label>
+
+          <label>
+            <input
+              type="radio"
+              name="estadocivil"
+              value="Separado(a)">
+
+            Separado(a)
+          </label>
+
+          <label>
+            <input
+              type="radio"
+              name="estadocivil"
+              value="Viudo(a)">
+
+            Viudo(a)
+          </label>
+
+          <label>
+            <input
+              type="radio"
+              name="estadocivil"
+              value="uniónlibre">
+
+            Unión libre
+          </label>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- ITEM 1 -->
+
+    <div class="item">
+
+      <div class="fila">
+
+        <div class="texto">
+          Fecha en la que fue vinculado por primera vez
+          como profesor(a) a la Universidad del Cauca
+        </div>
+
+        <div class="cantidadTexto">
+
+          <input
+            type="date"
+            id="fechaVinculacion"
+            name="fechaVinculacion">
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- ITEM 2 -->
+
+    <div class="item">
+
+      <div class="fila">
+
+        <div class="texto">
+          En períodos académicos,
+          ¿ha sido continua su vinculación
+          desde la fecha por primera vez
+          hasta la actualidad?
+        </div>
+
+        <div class="opciones">
+
+          <label>
+            <input
+              type="radio"
+              name="vinculacionContinua"
+              value="Sí">
+
+            Sí
+          </label>
+
+          <label>
+            <input
+              type="radio"
+              name="vinculacionContinua"
+              value="No">
+
+            No
+          </label>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- ITEM 3 -->
+
+    <div class="item">
+
+      <div class="fila">
+
+        <div class="texto">
+          ¿Ha pertenecido siempre
+          al mismo departamento?
+        </div>
+
+        <div class="opciones">
+
+        
+        <div id="mismodpto" class="cantidad">
+          <label>Escriba el departamento al que más tiempo ha estado vinculado</label>
+          <textarea
+            id="cualmismodpto"
+            name="cualmismodpto"
+            rows="4"
+            placeholder="Escriba aquí"></textarea>
+
+        </div>  
+
+
+          <label>
+            <input
+              type="radio"
+              name="mismoDepartamento"
+              value="Sí" onclick="ocultarCantidad('mismodpto')">
+
+            Sí
+          </label>
+
+          <label>
+            <input
+              type="radio"
+              name="mismoDepartamento"
+              value="No" onclick="mostrarCantidad('mismodpto')">
+
+            No
+          </label>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- ITEM 4 -->
+
+    <div class="item">
+
+      <div class="fila">
+
+        <div class="texto">
+          Cantidad de períodos académicos como OTC
+        </div>
+
+        <div class="cantidadTexto">
+
+          <input
+            type="number"
+            min="0"
+            step="1"
+            id="periodosOTC"
+            name="periodosOTC"
+            placeholder="0">
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- ITEM 5 -->
+
+    <div class="item">
+
+      <div class="fila">
+
+        <div class="texto">
+          Cantidad de períodos académicos como OMT
+        </div>
+
+        <div class="cantidadTexto">
+
+          <input
+            type="number"
+            min="0"
+            step="1"
+            id="periodosOMT"
+            name="periodosOMT"
+            placeholder="0">
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- ITEM 6 -->
+
+    <div class="item">
+
+      <div class="fila">
+
+        <div class="texto">
+          Cantidad de períodos académicos
+          como hora cátedra
+        </div>
+
+        <div class="cantidadTexto">
+
+          <input
+            type="number"
+            min="0"
+            step="1"
+            id="periodosCatedra"
+            name="periodosCatedra"
+            placeholder="0">
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- ITEM 7 -->
+
+    <div class="item">
+
+      <div class="fila">
+
+        <div class="texto">
+          Escriba sus títulos de formación
+          de pregrado y posgrado
+        </div>
+
+        <div class="cantidadTexto">
+
+          <textarea
+            id="titulosFormacion"
+            name="titulosFormacion"
+            rows="4"
+            placeholder="Escriba aquí"></textarea>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- ITEM 8 -->
+
+    <div class="item">
+
+      <div class="fila">
+
+        <div class="texto">
+          Escriba las asignaturas
+          que ha cubierto
+          en su docencia directa
+        </div>
+
+        <div class="cantidadTexto">
+
+          <textarea
+            id="asignaturas"
+            name="asignaturas"
+            rows="4"
+            placeholder="Escriba aquí"></textarea>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- ITEM 9 -->
+
+    <div class="item">
+
+      <div class="fila">
+
+        <div class="texto">
+          Escriba las líneas de investigación
+          en las que principalmente
+          ha desarrollado
+          su producción académica
+        </div>
+
+        <div class="cantidadTexto">
+
+          <textarea
+            id="lineasInvestigacion"
+            name="lineasInvestigacion"
+            rows="4"
+            placeholder="Escriba aquí"></textarea>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    
+    <button type="button"
+            class="button1"
+            onclick="window.location.href='principal.html'">
+
+      Volver al menú
+    </button>
+
+    <button type="submit" class="button1">
+      Guardar respuestas
+    </button>
+
+    <p id="mensaje"></p>
+
+  </form>
+
+</div>
+
+<script>
+
+let usuarioActual = null;
+
+async function cargarUsuario() {
+
+  const res = await fetch("/usuario");
+
+  if (!res.ok) {
+    window.location.href = "index.html";
+    return;
+  }
+
+  usuarioActual = await res.json();
+
+  document.getElementById("bienvenida").textContent =
+    "Usuario: " + usuarioActual.usuario;
+}
+
+cargarUsuario();
+
+function mostrarCantidad(id) {
+  document.getElementById(id).style.display = "block";
+}
+
+function ocultarCantidad(id) {
+  const contenedor = document.getElementById(id);
+
+  contenedor.style.display = "none";
+
+  const inputs = contenedor.querySelectorAll("input");
+
+  inputs.forEach(input => {
+    input.value = "";
+  });
+}
+  
+
+document.getElementById("formularioencabezado")
+.addEventListener("submit", async function(e) {
+
+  e.preventDefault();
+
+  const datos = new FormData(this);
+
+  const res = await fetch("/guardar-encabezado", {
+
+    method: "POST",
+
+    headers: {
+      "Content-Type": "application/json"
+    },
+
+    body: JSON.stringify({
+
+      seccion: "Información General",
+
+      fechaNacimiento:
+        datos.get("fechaNacimiento"),
+
+      lugarNacimiento:
+        datos.get("lugarNacimiento"),
+
+       sexo:
+         datos.get("sexo"),
+
+      estadoCivil: datos.get("estadocivil"),
+
+      fechaVinculacion:
+        datos.get("fechaVinculacion"),
+
+      vinculacionContinua:
+        datos.get("vinculacionContinua"),
+
+      mismoDepartamento:
+        datos.get("mismoDepartamento"),
+
+      cualmismoDpto:
+        datos.get("cualmismodpto"),
+
+      periodosOTC:
+        datos.get("periodosOTC"),
+
+      periodosOMT:
+        datos.get("periodosOMT"),
+
+      periodosCatedra:
+        datos.get("periodosCatedra"),
+
+      titulosFormacion:
+        datos.get("titulosFormacion"),
+
+      asignaturas:
+        datos.get("asignaturas"),
+
+      lineasInvestigacion:
+        datos.get("lineasInvestigacion")
+
+    })
+
+  });
+
+  const data = await res.json();
+
+  if (res.ok) {
+
+    alert("Los datos se salvaron satisfactoriamente");
+
+  } else {
+
+    alert("Error: " + (data.detalle || data.mensaje));
+  }
+
+  document.getElementById("mensaje")
+    .textContent = data.mensaje;
+});
+
+</script>
+
+</body>
+</html>
