@@ -469,20 +469,30 @@ const usuarios = [
   { usuario: "10297491", password: "burbano", rol: "estudiante" },
   { usuario: "34565520", password: "cabrera", rol: "estudiante" },
   { usuario: "76304127", password: "caicedo", rol: "estudiante" },
+  { usuario: "76306205", password: "caicedo", rol: "estudiante" },
   { usuario: "1061714476", password: "caldon", rol: "estudiante" },
+  { usuario: "4616247", password: "caldon", rol: "estudiante" },
   { usuario: "79291837", password: "camacho", rol: "estudiante" },
   { usuario: "76323330", password: "campo", rol: "estudiante" },
+  { usuario: "34533885", password: "campo", rol: "estudiante" },
+  { usuario: "34552993", password: "campo", rol: "estudiante" },
+  
 
   { usuario: "34331407", password: "campos", rol: "estudiante" },
   { usuario: "1061741386", password: "cardona", rol: "estudiante" },
   { usuario: "34564191", password: "carmona", rol: "estudiante" },
   { usuario: "1061724261", password: "castillo", rol: "estudiante" },
   { usuario: "34571572", password: "castro", rol: "estudiante" },
+  { usuario: "10549763", password: "castro", rol: "estudiante" },
   { usuario: "1061750476", password: "celis", rol: "estudiante" },
   { usuario: "29180326", password: "ceron", rol: "estudiante" },
+  { usuario: "76293291", password: "ceron", rol: "estudiante" },
+  { usuario: "3185236599", password: "ceron", rol: "estudiante" },
+  { usuario: "76335256", password: "ceron", rol: "estudiante" },
   { usuario: "10538987", password: "chacon", rol: "estudiante" },
   { usuario: "1085273403", password: "chalapud", rol: "estudiante" },
   { usuario: "1061778189", password: "chamorro", rol: "estudiante" },
+  { usuario: "16265499", password: "chamorro", rol: "estudiante" },
 
   { usuario: "10296626", password: "chantre", rol: "estudiante" },
   { usuario: "25287914", password: "chaves", rol: "estudiante" },
@@ -496,15 +506,23 @@ const usuarios = [
   { usuario: "34540781", password: "cruz", rol: "estudiante" },
 
   { usuario: "1061733896", password: "daza", rol: "estudiante" },
+  { usuario: "25274299", password: "delacruz", rol: "estudiante" },
+  
   { usuario: "10698926", password: "delgado", rol: "estudiante" },
   { usuario: "76323634", password: "diaz", rol: "estudiante" },
   { usuario: "10291231", password: "dorado", rol: "estudiante" },
   { usuario: "1061773932", password: "erazo", rol: "estudiante" },
   { usuario: "1061713891", password: "fernandez", rol: "estudiante" },
+  { usuario: "1061713963", password: "fernandez", rol: "estudiante" },
+  { usuario: "4612860", password: "fernandez", rol: "estudiante" },
+  
   { usuario: "4616466", password: "flor", rol: "estudiante" },
   { usuario: "34326303", password: "florez", rol: "estudiante" },
+  { usuario: "1061718705", password: "florez", rol: "estudiante" },
+  
   { usuario: "34553693", password: "fuentes", rol: "estudiante" },
   { usuario: "1061753315", password: "galindez", rol: "estudiante" },
+  { usuario: "1059900535", password: "galindez", rol: "estudiante" },
 
   { usuario: "1061807594", password: "galvis", rol: "estudiante" },
   { usuario: "79368026", password: "gil", rol: "estudiante" },
@@ -512,18 +530,35 @@ const usuarios = [
   { usuario: "38870756", password: "giraldo", rol: "estudiante" },
   { usuario: "12747768", password: "gomez", rol: "estudiante" },
   { usuario: "34571468", password: "gomez", rol: "estudiante" },
-  { usuario: "30238110", password: "gonzales", rol: "estudiante" },
+  { usuario: "1061704241", password: "gomez", rol: "estudiante" },
+  { usuario: "34324353", password: "gomez", rol: "estudiante" },
+
+  
+  { usuario: "25280764", password: "gonzalez", rol: "estudiante" },
   { usuario: "10296783", password: "gonzalez", rol: "estudiante" },
+  { usuario: "25281745", password: "gonzalez", rol: "estudiante" },
+  { usuario: "4611386", password: "gonzalez", rol: "estudiante" },
+  { usuario: "79671844", password: "gonzalez", rol: "estudiante" },
+  { usuario: "1061746354", password: "gonzalez", rol: "estudiante" },
+
+  
   { usuario: "27250778", password: "guerrero", rol: "estudiante" },
+  { usuario: "1085898538", password: "guerrero", rol: "estudiante" },
+  
   { usuario: "65784022", password: "gutierrez", rol: "estudiante" },
+  { usuario: "16655777", password: "gutierrez", rol: "estudiante" },
   { usuario: "76326426", password: "guzman", rol: "estudiante" },
+  { usuario: "34568359", password: "guzman", rol: "estudiante" },
 
   { usuario: "25278592", password: "henao", rol: "estudiante" },
+  { usuario: "1061733767", password: "hernan", rol: "estudiante" },
   { usuario: "92511255", password: "hernandez", rol: "estudiante" },
+  { usuario: "1061740241", password: "hernandez", rol: "estudiante" },
   { usuario: "1061780052", password: "herrera", rol: "estudiante" },
   { usuario: "1061728066", password: "hoyos", rol: "estudiante" },
   { usuario: "76328121", password: "huertas", rol: "estudiante" },
   { usuario: "34562628", password: "hurtado", rol: "estudiante" },
+  { usuario: "65771123", password: "hurtado", rol: "estudiante" },
   { usuario: "25274197", password: "idrobo", rol: "estudiante" },
   { usuario: "1061726739", password: "illera", rol: "estudiante" },
   { usuario: "1061714887", password: "ipia", rol: "estudiante" },
@@ -531,13 +566,23 @@ const usuarios = [
 
   { usuario: "31579224", password: "jimenez", rol: "estudiante" },
   { usuario: "25292048", password: "ledezma", rol: "estudiante" },
+  { usuario: "48600759", password: "ledezma", rol: "estudiante" },
+  
   { usuario: "76305878", password: "lopez", rol: "estudiante" },
+  { usuario: "1061755959", password: "lopez", rol: "estudiante" },
+  { usuario: "25292796", password: "lopez", rol: "estudiante" },
+  { usuario: "25281594", password: "lopez", rol: "estudiante" },
+  { usuario: "10300277", password: "lopez", rol: "estudiante" },
+
+
+  
   { usuario: "10292741", password: "lozada", rol: "estudiante" },
   { usuario: "94533532", password: "lucero", rol: "estudiante" },
   { usuario: "1061713635", password: "luna", rol: "estudiante" },
   { usuario: "34329405", password: "mamian", rol: "estudiante" },
   { usuario: "94475443", password: "marquez", rol: "estudiante" },
   { usuario: "16918837", password: "martinez", rol: "estudiante" },
+  { usuario: "1061728878", password: "martinez", rol: "estudiante" },
   { usuario: "34318506", password: "maya", rol: "estudiante" },
 
   { usuario: "76318072", password: "mendez", rol: "estudiante" },
@@ -568,8 +613,6 @@ const usuarios = [
 
   { usuario: "87102325", password: "narvaez", rol: "estudiante" },
   { usuario: "1061735786", password: "narvaez", rol: "estudiante" },
-
-  { usuario: "1061688308", password: "nathalie", rol: "estudiante" },
 
   { usuario: "34322664", password: "navia", rol: "estudiante" },
 
@@ -686,7 +729,7 @@ const usuarios = [
 
   { usuario: "10293365", password: "vela", rol: "estudiante" },
 
-  { usuario: "1061777102", password: "velásquez", rol: "estudiante" },
+  { usuario: "1061777102", password: "velasquez", rol: "estudiante" },
 
   { usuario: "1061704317", password: "velez", rol: "estudiante" },
 
