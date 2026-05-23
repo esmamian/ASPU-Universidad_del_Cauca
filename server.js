@@ -434,7 +434,7 @@ pool.query(`
 const usuarios = [
   { usuario: "ana", password: "1234", rol: "estudiante" },
   { usuario: "luis", password: "1234", rol: "estudiante" },
-  { usuario: "admin", password: "admin123", rol: "admin" },
+  { usuario: "aspuca", password: "aspuca03912025", rol: "admin" },
   { usuario: "acevedo", password: "4376955", rol: "estudiante" },
   { usuario: "acosta", password: "10547808", rol: "estudiante" },
   { usuario: "agredo", password: "1061755513", rol: "estudiante" },
