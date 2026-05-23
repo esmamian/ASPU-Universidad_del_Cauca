@@ -510,6 +510,7 @@ const usuarios = [
   { usuario: "79368026", password: "gil", rol: "estudiante" },
   { usuario: "25517745", password: "gilon", rol: "estudiante" },
   { usuario: "38870756", password: "giraldo", rol: "estudiante" },
+  { usuario: "12747768", password: "gomez", rol: "estudiante" },
   { usuario: "34571468", password: "gomez", rol: "estudiante" },
   { usuario: "30238110", password: "gonzales", rol: "estudiante" },
   { usuario: "10296783", password: "gonzalez", rol: "estudiante" },
