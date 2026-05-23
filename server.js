@@ -434,7 +434,261 @@ pool.query(`
 const usuarios = [
   { usuario: "ana", password: "1234", rol: "estudiante" },
   { usuario: "luis", password: "1234", rol: "estudiante" },
-  { usuario: "admin", password: "admin123", rol: "admin" }
+  { usuario: "admin", password: "admin123", rol: "admin" },
+  const usuarios = [
+  { usuario: "acevedo", password: "4376955", rol: "estudiante" },
+  { usuario: "acosta", password: "10547808", rol: "estudiante" },
+  { usuario: "agredo", password: "1061755513", rol: "estudiante" },
+  { usuario: "ahumada", password: "34569033", rol: "estudiante" },
+  { usuario: "aldaban", password: "65745876", rol: "estudiante" },
+  { usuario: "alegria", password: "10292641", rol: "estudiante" },
+  { usuario: "alvarado", password: "1130661300", rol: "estudiante" },
+  { usuario: "alvarez", password: "25292542", rol: "estudiante" },
+  { usuario: "angel", password: "1059911088", rol: "estudiante" },
+  { usuario: "arango", password: "29105012", rol: "estudiante" },
+  { usuario: "arcos", password: "1061686107", rol: "estudiante" },
+  { usuario: "arrechea", password: "1061716987", rol: "estudiante" },
+  { usuario: "arroyo", password: "34328411", rol: "estudiante" },
+  { usuario: "audivert", password: "79968066", rol: "estudiante" },
+  { usuario: "bahos", password: "76335868", rol: "estudiante" },
+  { usuario: "bambague", password: "1061704258", rol: "estudiante" },
+  { usuario: "barrera", password: "80505706", rol: "estudiante" },
+  { usuario: "bastidas", password: "1061720750", rol: "estudiante" },
+  { usuario: "bautista", password: "34317180", rol: "estudiante" },
+  { usuario: "becoche", password: "1061730996", rol: "estudiante" },
+
+  { usuario: "belalcazar", password: "1061740306", rol: "estudiante" },
+  { usuario: "bermudez", password: "38755608", rol: "estudiante" },
+  { usuario: "betancour", password: "94073716", rol: "estudiante" },
+  { usuario: "bolaños", password: "1088973637", rol: "estudiante" },
+  { usuario: "burbano", password: "10297491", rol: "estudiante" },
+  { usuario: "cabrera", password: "34565520", rol: "estudiante" },
+  { usuario: "caicedo", password: "76304127", rol: "estudiante" },
+  { usuario: "caldon", password: "1061714476", rol: "estudiante" },
+  { usuario: "camacho", password: "79291837", rol: "estudiante" },
+  { usuario: "campo", password: "76323330", rol: "estudiante" },
+
+  { usuario: "campos", password: "34331407", rol: "estudiante" },
+  { usuario: "cardona", password: "1061741386", rol: "estudiante" },
+  { usuario: "carmona", password: "34564191", rol: "estudiante" },
+  { usuario: "castillo", password: "1061724261", rol: "estudiante" },
+  { usuario: "castro", password: "34571572", rol: "estudiante" },
+  { usuario: "celis", password: "1061750476", rol: "estudiante" },
+  { usuario: "ceron", password: "29180326", rol: "estudiante" },
+  { usuario: "chacon", password: "10538987", rol: "estudiante" },
+  { usuario: "chalapud", password: "1085273403", rol: "estudiante" },
+  { usuario: "chamorro", password: "1061778189", rol: "estudiante" },
+
+  { usuario: "chantre", password: "10296626", rol: "estudiante" },
+  { usuario: "chaves", password: "25287914", rol: "estudiante" },
+  { usuario: "chavez", password: "1061746702", rol: "estudiante" },
+  { usuario: "claros", password: "34569880", rol: "estudiante" },
+  { usuario: "cobo", password: "1061747901", rol: "estudiante" },
+  { usuario: "coral", password: "36758323", rol: "estudiante" },
+  { usuario: "coronell", password: "16536890", rol: "estudiante" },
+  { usuario: "correa", password: "14700203", rol: "estudiante" },
+  { usuario: "cortes", password: "1087121139", rol: "estudiante" },
+  { usuario: "cruz", password: "34540781", rol: "estudiante" },
+
+  { usuario: "daza", password: "1061733896", rol: "estudiante" },
+  { usuario: "delgado", password: "10698926", rol: "estudiante" },
+  { usuario: "diaz", password: "76323634", rol: "estudiante" },
+  { usuario: "dorado", password: "10291231", rol: "estudiante" },
+  { usuario: "erazo", password: "1061773932", rol: "estudiante" },
+  { usuario: "fernandez", password: "1061713891", rol: "estudiante" },
+  { usuario: "flor", password: "4616466", rol: "estudiante" },
+  { usuario: "florez", password: "34326303", rol: "estudiante" },
+  { usuario: "fuentes", password: "34553693", rol: "estudiante" },
+  { usuario: "galindez", password: "1061753315", rol: "estudiante" },
+
+  { usuario: "galvis", password: "1061807594", rol: "estudiante" },
+  { usuario: "gil", password: "79368026", rol: "estudiante" },
+  { usuario: "gilon", password: "25517745", rol: "estudiante" },
+  { usuario: "giraldo", password: "38870756", rol: "estudiante" },
+  { usuario: "gomez", password: "34571468", rol: "estudiante" },
+  { usuario: "gonzales", password: "30238110", rol: "estudiante" },
+  { usuario: "gonzalez", password: "10296783", rol: "estudiante" },
+  { usuario: "guerrero", password: "27250778", rol: "estudiante" },
+  { usuario: "gutierrez", password: "65784022", rol: "estudiante" },
+  { usuario: "guzman", password: "76326426", rol: "estudiante" },
+
+  { usuario: "henao", password: "25278592", rol: "estudiante" },
+  { usuario: "hernandez", password: "92511255", rol: "estudiante" },
+  { usuario: "herrera", password: "1061780052", rol: "estudiante" },
+  { usuario: "hoyos", password: "1061728066", rol: "estudiante" },
+  { usuario: "huertas", password: "76328121", rol: "estudiante" },
+  { usuario: "hurtado", password: "34562628", rol: "estudiante" },
+  { usuario: "idrobo", password: "25274197", rol: "estudiante" },
+  { usuario: "illera", password: "1061726739", rol: "estudiante" },
+  { usuario: "ipia", password: "1061714887", rol: "estudiante" },
+  { usuario: "jaramillo", password: "1061688234", rol: "estudiante" },
+
+  { usuario: "jimenez", password: "31579224", rol: "estudiante" },
+  { usuario: "ledezma", password: "25292048", rol: "estudiante" },
+  { usuario: "lopez", password: "76305878", rol: "estudiante" },
+  { usuario: "lozada", password: "10292741", rol: "estudiante" },
+  { usuario: "lucero", password: "94533532", rol: "estudiante" },
+  { usuario: "luna", password: "1061713635", rol: "estudiante" },
+  { usuario: "mamian", password: "34329405", rol: "estudiante" },
+  { usuario: "marquez", password: "94475443", rol: "estudiante" },
+  { usuario: "martinez", password: "16918837", rol: "estudiante" },
+  { usuario: "maya", password: "34318506", rol: "estudiante" },
+    { usuario: "mendez", password: "76318072", rol: "estudiante" },
+  { usuario: "mendez", password: "31577990", rol: "estudiante" },
+  { usuario: "meneses", password: "14251340", rol: "estudiante" },
+  { usuario: "mera", password: "10296785", rol: "estudiante" },
+  { usuario: "miranda", password: "30720867", rol: "estudiante" },
+  { usuario: "montenegro", password: "34327979", rol: "estudiante" },
+  { usuario: "moreno", password: "387049", rol: "estudiante" },
+  { usuario: "moreno", password: "25286633", rol: "estudiante" },
+  { usuario: "mosquera", password: "10484572", rol: "estudiante" },
+  { usuario: "mosquera", password: "76313291", rol: "estudiante" },
+  { usuario: "mosquera", password: "1061709930", rol: "estudiante" },
+  { usuario: "mosquera", password: "34315253", rol: "estudiante" },
+
+  { usuario: "muñoz", password: "76323259", rol: "estudiante" },
+  { usuario: "muñoz", password: "34324842", rol: "estudiante" },
+  { usuario: "muñoz", password: "4617653", rol: "estudiante" },
+  { usuario: "muñoz", password: "76327294", rol: "estudiante" },
+  { usuario: "muñoz", password: "1061685846", rol: "estudiante" },
+  { usuario: "muñoz", password: "34570633", rol: "estudiante" },
+  { usuario: "muñoz", password: "34317037", rol: "estudiante" },
+
+  { usuario: "murcia", password: "1084250543", rol: "estudiante" },
+  { usuario: "murillo", password: "34553254", rol: "estudiante" },
+  { usuario: "murillo", password: "13742651", rol: "estudiante" },
+
+  { usuario: "narvaez", password: "87102325", rol: "estudiante" },
+  { usuario: "narvaez", password: "1061735786", rol: "estudiante" },
+
+  { usuario: "nathalie", password: "1061688308", rol: "estudiante" },
+
+  { usuario: "navia", password: "34322664", rol: "estudiante" },
+
+  { usuario: "niño", password: "1098609488", rol: "estudiante" },
+  { usuario: "niño", password: "25283057", rol: "estudiante" },
+
+  { usuario: "obando", password: "1061717946", rol: "estudiante" },
+  { usuario: "obando", password: "59819113", rol: "estudiante" },
+
+  { usuario: "ojeda", password: "1061757891", rol: "estudiante" },
+
+  { usuario: "ordoñez", password: "1061699361", rol: "estudiante" },
+  { usuario: "ordoñez", password: "1061714282", rol: "estudiante" },
+  { usuario: "ordoñez", password: "79261468", rol: "estudiante" },
+
+  { usuario: "orjuela", password: "25283965", rol: "estudiante" },
+  { usuario: "orozco", password: "34555465", rol: "estudiante" },
+
+  { usuario: "ortega", password: "1061699251", rol: "estudiante" },
+  { usuario: "ortega", password: "79790366", rol: "estudiante" },
+
+  { usuario: "osorio", password: "76150539", rol: "estudiante" },
+
+  { usuario: "otero", password: "1061725350", rol: "estudiante" },
+
+  { usuario: "paredes", password: "34326458", rol: "estudiante" },
+  { usuario: "paredes", password: "1064428888", rol: "estudiante" },
+
+  { usuario: "paz", password: "34330775", rol: "estudiante" },
+
+  { usuario: "pedraza", password: "34546494", rol: "estudiante" },
+  { usuario: "pedroza", password: "10521998", rol: "estudiante" },
+
+  { usuario: "perez", password: "25283669", rol: "estudiante" },
+  { usuario: "perez", password: "76306781", rol: "estudiante" },
+  { usuario: "perez", password: "1061705167", rol: "estudiante" },
+
+  { usuario: "pismag", password: "10298502", rol: "estudiante" },
+
+  { usuario: "pito", password: "34326024", rol: "estudiante" },
+
+  { usuario: "plaza", password: "34570325", rol: "estudiante" },
+
+  { usuario: "potosi", password: "25396777", rol: "estudiante" },
+
+  { usuario: "prado", password: "1061751898", rol: "estudiante" },
+
+  { usuario: "quiroga", password: "79989040", rol: "estudiante" },
+
+  { usuario: "ramirez", password: "34571575", rol: "estudiante" },
+
+  { usuario: "realpe", password: "1061726834", rol: "estudiante" },
+
+  { usuario: "rengifo", password: "10544217", rol: "estudiante" },
+  { usuario: "rengifo", password: "34331927", rol: "estudiante" },
+  { usuario: "rengifo", password: "1061688207", rol: "estudiante" },
+
+  { usuario: "restrepo", password: "25292426", rol: "estudiante" },
+
+  { usuario: "rivera", password: "34315699", rol: "estudiante" },
+
+  { usuario: "roa", password: "1061693126", rol: "estudiante" },
+
+  { usuario: "rodriguez", password: "10293679", rol: "estudiante" },
+
+  { usuario: "rojas", password: "1061721855", rol: "estudiante" },
+  { usuario: "rojas", password: "41941659", rol: "estudiante" },
+
+  { usuario: "romero", password: "50931271", rol: "estudiante" },
+
+  { usuario: "rosas", password: "1061721951", rol: "estudiante" },
+
+  { usuario: "rosero", password: "1061701811", rol: "estudiante" },
+
+  { usuario: "rozo", password: "79532990", rol: "estudiante" },
+
+  { usuario: "samboni", password: "1061778461", rol: "estudiante" },
+
+  { usuario: "sanchez", password: "1063812620", rol: "estudiante" },
+  { usuario: "sanchez", password: "1061690715", rol: "estudiante" },
+
+  { usuario: "sarmiento", password: "94063101", rol: "estudiante" },
+
+  { usuario: "sarria", password: "25283800", rol: "estudiante" },
+  { usuario: "sarria", password: "76330349", rol: "estudiante" },
+
+  { usuario: "soto", password: "1089718646", rol: "estudiante" },
+
+  { usuario: "terrios", password: "34551362", rol: "estudiante" },
+
+  { usuario: "toro", password: "34567510", rol: "estudiante" },
+
+  { usuario: "torres", password: "4415410", rol: "estudiante" },
+  { usuario: "torres", password: "34321576", rol: "estudiante" },
+
+  { usuario: "tovar", password: "1061687219", rol: "estudiante" },
+
+  { usuario: "trujillo", password: "1061738519", rol: "estudiante" },
+
+  { usuario: "urbano", password: "106477232", rol: "estudiante" },
+  { usuario: "urbano", password: "10304083", rol: "estudiante" },
+  { usuario: "urbano", password: "1061704795", rol: "estudiante" },
+
+  { usuario: "valencia", password: "1061721904", rol: "estudiante" },
+  { usuario: "valencia", password: "76313761", rol: "estudiante" },
+
+  { usuario: "valera", password: "2000022127", rol: "estudiante" },
+
+  { usuario: "vargas", password: "10697021", rol: "estudiante" },
+
+  { usuario: "varon", password: "1061708024", rol: "estudiante" },
+
+  { usuario: "vasquez", password: "1110452139", rol: "estudiante" },
+
+  { usuario: "vela", password: "10293365", rol: "estudiante" },
+
+  { usuario: "velásquez", password: "1061777102", rol: "estudiante" },
+
+  { usuario: "velez", password: "1061704317", rol: "estudiante" },
+
+  { usuario: "vidal", password: "25272839", rol: "estudiante" },
+
+  { usuario: "villaquiran", password: "34327296", rol: "estudiante" },
+
+  { usuario: "zarama", password: "27081937", rol: "estudiante" },
+
+  { usuario: "zuñiga", password: "34561007", rol: "estudiante" }
 ];
 
 // Middleware
