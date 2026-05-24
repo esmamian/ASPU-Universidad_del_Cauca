@@ -445,7 +445,7 @@ const usuarios = [
   { usuario: "10547808", password: "acosta", rol: "estudiante" },
   { usuario: "1061755513", password: "agredo", rol: "estudiante" },
   { usuario: "34569033", password: "ahumada", rol: "estudiante" },
-  { usuario: "65745876", password: "aldaban", rol: "estudiante" },
+  { usuario: "65745876", password: "albadan", rol: "estudiante" },
   { usuario: "10292641", password: "alegria", rol: "estudiante" },
   { usuario: "1130661300", password: "alvarado", rol: "estudiante" },
   { usuario: "25292542", password: "alvarez", rol: "estudiante" },
